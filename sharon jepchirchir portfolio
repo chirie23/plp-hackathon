@@ -1,0 +1,22 @@
+# Basic Python Script - My First Program
+
+def add_numbers(a, b):
+    return a + b
+
+def main():
+    print("Welcome to My First Python Program!")
+    
+    num1 = 5
+    num2 = 10
+    result = add_numbers(num1, num2)
+    
+    print(f"The sum of {num1} and {num2} is {result}")
+    
+    # Write result to a file
+    with open("output.txt", "w") as file:
+        file.write(f"Sum: {result}\n")
+    
+    print("Result written to output.txt")
+
+if __name__ == "__main__":
+    main()
